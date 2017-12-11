@@ -26,6 +26,10 @@ namespace MvcSite1
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/less").Include("~/Scripts/less-{version}.js"));
+
+            bundles.Add(new StyleBundle("~/Content/less").Include("~/Content/Less/*.less"));
         }
     }
 }
