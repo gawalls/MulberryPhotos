@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MulberryPhotos.DataAccess.Interfaces
 {
-    public interface IWebSection
+    public interface IWebSectionContent
     {
         string Name { get; }
 

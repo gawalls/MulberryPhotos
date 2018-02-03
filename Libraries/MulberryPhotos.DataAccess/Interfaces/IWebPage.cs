@@ -12,8 +12,8 @@ namespace MulberryPhotos.DataAccess.Interfaces
 
         IMetaData MetaData { get; }
 
-        List<string> ImageList { get;  }
+        List<IWebImage> ImageList { get;  }
 
-        List<IWebSection> WebSections { get; }
+        List<IWebSectionContent> WebSections { get; }
     }
 }
