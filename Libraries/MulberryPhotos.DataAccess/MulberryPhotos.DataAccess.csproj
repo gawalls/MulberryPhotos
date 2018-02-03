@@ -41,10 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IMetaData.cs" />
-    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IWebImage.cs" />
     <Compile Include="Interfaces\IWebPage.cs" />
+    <Compile Include="Interfaces\IWebPageContentProvider.cs" />
     <Compile Include="Interfaces\IWebSectionContent.cs" />
+    <Compile Include="Objects\BaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

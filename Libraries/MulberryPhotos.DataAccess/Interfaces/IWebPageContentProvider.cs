@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MulberryPhotos.DataAccess.Interfaces
 {
-    public interface IRepository
+    public interface IWebPageContentProvider
     {
         string GetWebPageName();
 
