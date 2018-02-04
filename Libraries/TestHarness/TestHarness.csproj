@@ -48,7 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MulberryPhotos.DataAcess\TestXmlRepository.cs" />
+    <Compile Include="MulberryPhotos.DataAcess\TestXmlWebPageRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

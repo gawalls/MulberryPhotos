@@ -40,13 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\WebPageNameEnum.cs" />
     <Compile Include="Interfaces\IMetaData.cs" />
     <Compile Include="Interfaces\IWebImage.cs" />
     <Compile Include="Interfaces\IWebPage.cs" />
-    <Compile Include="Interfaces\IWebPageContentProvider.cs" />
+    <Compile Include="Interfaces\IWebPageRepository.cs" />
     <Compile Include="Interfaces\IWebSectionContent.cs" />
-    <Compile Include="Objects\BaseRepository.cs" />
+    <Compile Include="Objects\MetaData.cs" />
+    <Compile Include="Objects\WebImage.cs" />
+    <Compile Include="Objects\WebPage.cs" />
+    <Compile Include="Objects\WebSectionContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\XmlWebPageRepository.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
