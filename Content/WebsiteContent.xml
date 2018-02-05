@@ -145,9 +145,10 @@
       <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
-    <Sections Name="Main" Title="PRICES AND PRODUCTS">
-      <element>
-        <![CDATA[
+    <Sections>
+      <Section Name="Main" Title="PRICES AND PRODUCTS">
+        <element>
+          <![CDATA[
           <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">
 <p style="text-align:left;">Our product portfolio is designed to make the most of your portrait session. Documentary portraiture is about telling a story – and capturing a moment in your family story is just the start of it. How you choose to record that story is up to you.</p>
 <p style="text-align:left;"><strong>Portrait session fee</strong></p>
@@ -182,7 +183,8 @@
 <p style="text-align:left;"><strong>Order with ease</strong></p>
 <p style="text-align:left;">After your family portrait session, we’ll make an appointment for your viewing – again, we will come to you. You’ll be presented with the story of the day in around 80 images on our high resolution screen in the comfort of your own home. You’ll also be able to view sample albums and frames, so that you can make an informed decision on the best way to keep your family portrait.</p>
         ]]>
-      </element>
+        </element>
+      </Section>
     </Sections>
   </WebPage>
   <WebPage>

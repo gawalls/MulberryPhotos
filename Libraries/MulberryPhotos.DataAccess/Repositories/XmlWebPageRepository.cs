@@ -26,28 +26,42 @@ namespace MulberryPhotos.DataAccess.Repositories
             XmlDocument document = new XmlDocument();
             document.Load(_filename);
             XmlNode rootNode = document.DocumentElement;
-            XmlNodeList pageNodeList = rootNode.SelectNodes("/WebPages/WebPage");
 
-            foreach (XmlNode pageNode in pageNodeList)
+            if (rootNode != null)
             {
-                //get name and title
-                string name = pageNode["Name"].InnerText;
-                string title = pageNode["Title"].InnerText;
+                XmlNodeList pageNodeList = rootNode.SelectNodes("/WebPages/WebPage");
 
-                //get metadata
-                XmlNode metaNode = pageNode["Meta"];
-                string metaDataTitle = metaNode["MetaTitle"].InnerText; 
-                MetaData metaData = new MetaData(metaDataTitle);
+                if (pageNodeList != null)
+                {
+                    foreach (XmlNode pageNode in pageNodeList)
+                    {
+                        //get name and title
+                        string name = pageNode["Name"]?.InnerText;
+                        string title = pageNode["Title"]?.InnerText;
 
-                //get lists
-                List<IWebImage> webImageList = GetWebImageList(pageNode["Images"]);
-                List<IWebSectionContent> contentList = GetContentList(pageNode["Sections"]);
+                        //get metadata
+                        XmlNode metaNode = pageNode["Meta"];
+                        MetaData metaData = null;
 
-                //now initialise the webPage class and add it to the list
-                WebPage page = new WebPage(name, title, metaData, webImageList, contentList);
-                webPageList.Add(page);
+                        if (metaNode != null)
+                        {
+                            string metaDataTitle = metaNode["MetaTitle"]?.InnerText;
+                            metaData = new MetaData(metaDataTitle);
+                        }
+
+                        //get lists
+                        List<IWebImage> webImageList = GetWebImageList(pageNode["Images"]);
+                        List<IWebSectionContent> contentList = GetContentList(pageNode["Sections"]);
+
+                        //now initialise the webPage class and add it to the list
+                        WebPage page = new WebPage(name, title, metaData, webImageList, contentList);
+                        webPageList.Add(page);
+                    }
+                }
+                return webPageList;
             }
-            return webPageList;
+
+            return null;
         }
 
         public IWebPage GetSingle(WebPageNameEnum pageName)
@@ -64,11 +78,14 @@ namespace MulberryPhotos.DataAccess.Repositories
 
             foreach (XmlNode item in pageNode.ChildNodes)
             {
-                string imageType = item.Attributes["Name"].Value;                
-                string filename = item.InnerText;
+                if (item.Attributes != null)
+                {
+                    string imageType = item?.Attributes["Name"].Value;                
+                    string filename = item.InnerText;
 
-                WebImage image = new WebImage(imageType, filename);
-                images.Add(image);
+                    WebImage image = new WebImage(imageType, filename);
+                    images.Add(image);
+                }
             }
 
             return images;
@@ -76,7 +93,30 @@ namespace MulberryPhotos.DataAccess.Repositories
 
         private List<IWebSectionContent> GetContentList(XmlNode pageNode)
         {
-            throw new NotImplementedException();
+            List<IWebSectionContent> contentList = new List<IWebSectionContent>();
+
+            foreach (XmlNode sectionNode in pageNode.ChildNodes)
+            {
+                if (sectionNode.Attributes != null)
+                {
+                    string name = sectionNode.Attributes["Name"].Value;
+                    string title = sectionNode.Attributes["Title"].Value;
+                    XmlNode elementNode = sectionNode.SelectSingleNode("element");
+                    string htmlContent = "";
+
+                    if (elementNode != null)
+                    {
+                        htmlContent = elementNode
+                            .FirstChild.InnerText
+                            .Trim("\r\n".ToCharArray())
+                            .Trim();
+                    }
+
+                    contentList.Add(new WebSectionContent(name, title, htmlContent));
+                }
+            }
+
+            return contentList;
         }
 
         #endregion

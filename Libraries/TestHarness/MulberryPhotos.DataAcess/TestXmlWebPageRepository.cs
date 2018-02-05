@@ -11,7 +11,11 @@ namespace TestHarness.MulberryPhotos.DataAcess
     [TestClass]
     public class TestXmlWebPageRepository
     {
-        string _filename = @"D:\GithubRepositories\MulberryPhotos\Content\WebsiteContent.xml";
+        private static string homePcFolderLocation = @"D:\GithubRepositories\";
+        private static string workPcLocation = @"D:\ConceptProjects";
+        private static string filenameOnly = @"MulberryPhotos\Content\WebsiteContent.xml";
+        private string _filename = Path.Combine(workPcLocation, filenameOnly);
+
         private XmlWebPageRepository _repository => new XmlWebPageRepository(_filename);
         private WebPageNameEnum _webPageEnum = WebPageNameEnum.HomePage;
         
