@@ -19,14 +19,6 @@ namespace MvcWideSite.Models
                     return HostingEnvironment.MapPath(@"~/App_Data/WebsiteContent.xml");
                 }
             }
-        }
-
-        public static XmlWebPageRepository Repository
-        {
-            get
-            {
-                return new XmlWebPageRepository(Locations.WebDataXmlFile);
-            }
-        }
+        }        
     }
 }

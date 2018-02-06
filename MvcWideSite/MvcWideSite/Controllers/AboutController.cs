@@ -6,14 +6,9 @@ using System.Web.Mvc;
 
 namespace MvcWideSite.Controllers
 {
-    public class HomeController : BaseController
+    public class AboutController : BaseController
     {
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult TestRouteConfig()
         {
             return View();
         }
