@@ -9,7 +9,7 @@ namespace MulberryPhotos.DataAccess.Enums
     public enum WebPageNameEnum
     {
         HomePage,
-        FamiltPortrait,
+        FamilyPortrait,
         BabiesAndToddlers,
         ChidrensAndTeens,
         Generations,

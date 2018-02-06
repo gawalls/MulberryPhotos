@@ -1,7 +1,16 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model MvcWideSite.ViewModels.WebPageViewModel
+
+@{
+    ViewBag.Title = @Html.Raw(Model.Title);
 }
 
 <div class="row">
+    <h1>@Model.Title</h1>
     
+    @foreach (var content in Model.ContentList)
+    {
+    <div id="@content.Name" name="@content.Name">
+        @Html.Raw(content.HtmlContent)
+    </div>
+    }
 </div>

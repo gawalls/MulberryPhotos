@@ -14,16 +14,16 @@ namespace MvcWideSite
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "familyPortraits",
-                url: "about",
-                defaults: new { controller = "About", action = "Index" }
+                name: "ServeContent",
+                url: "{routeName}",
+                defaults: new { controller = "Home", action = "Index", routeName = "Home" }
             );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );            
+            );                                
         }
     }
 }

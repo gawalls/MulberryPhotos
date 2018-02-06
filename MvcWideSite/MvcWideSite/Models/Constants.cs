@@ -19,6 +19,6 @@ namespace MvcWideSite.Models
                     return HostingEnvironment.MapPath(@"~/App_Data/WebsiteContent.xml");
                 }
             }
-        }        
+        }
     }
 }
