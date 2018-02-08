@@ -23,6 +23,15 @@ namespace MvcWideSite.Controllers
             }
 
             return View(model);            
-        }        
+        }
+        
+        
+        public JsonResult SaveEnquiry(string name, string email, string comments)
+        {
+            JsonResult result = new JsonResult();
+            result.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+            result.Data = true;
+            return result;
+        }
     }
 }
