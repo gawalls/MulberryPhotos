@@ -4,13 +4,20 @@
     ViewBag.Title = @Html.Raw(Model.Title);
 }
 
-<div class="row">
-    <h1>@Model.Title</h1>
-    
-    @foreach (var content in Model.ContentList)
-    {
-    <div id="@content.Name" name="@content.Name">
-        @Html.Raw(content.HtmlContent)
+<div class="containers">
+    <div class="rows">
+        @*<div>
+            <img class="img-responsive header-content" alt="header image" src="~/Content/Images/mulberry_photos_header.jpg" />
+            <img class="img-responsive header-content img-rounded" src="~/Content/Images/cropped-family_portrait2.jpg" />
+        </div>*@
+
+        <h1>@Model.Title</h1>
+
+        @foreach (var content in Model.ContentList)
+        {
+            <div id="@content.Name" name="@content.Name">
+                @Html.Raw(content.HtmlContent)
+            </div>
+        }
     </div>
-    }
 </div>
