@@ -18,26 +18,27 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul id="mainMenu" class="nav navbar-nav">
-                    <li>@Html.ActionLink("Welcome", "Index", "Home", new { routeName = "home" }, null)</li>
-                    <li>@Html.ActionLink("Family Portraits", "Index", "Home", new { routeName = "family" }, null)</li>
-                    <li>@Html.ActionLink("Babies and Toddlers", "Index", "Home", new { routeName = "babies-and-toddlers" }, null)</li>
-                    <li>@Html.ActionLink("Childrens and Teens", "Index", "Home", new { routeName = "childrens-and-teens" }, null)</li>
-                    <li>@Html.ActionLink("Generations", "Index", "Home", new { routeName = "generations" }, null)</li>
-                    <li>@Html.ActionLink("Frequently Asked Questions", "Index", "Home", new { routeName = "frequently-asked-questions" }, null)</li>
-                    <li>@Html.ActionLink("About", "Index", "Home", new { routeName = "about" }, null)</li>
-                    <li>@Html.ActionLink("Contact", "Index", "Home", new { routeName = "contact" }, null)</li>
-                </ul>
-            </div>
         </div>
+        <div class="navbar-collapse collapse">
+            <ul id="mainMenu" class="nav navbar-nav">
+                <li>@Html.ActionLink("Welcome", "Index", "Home", new { routeName = "home" }, null)</li>
+                <li>@Html.ActionLink("Family Portraits", "Index", "Home", new { routeName = "family" }, null)</li>
+                <li>@Html.ActionLink("Babies and Toddlers", "Index", "Home", new { routeName = "babies-and-toddlers" }, null)</li>
+                <li>@Html.ActionLink("Childrens and Teens", "Index", "Home", new { routeName = "childrens-and-teens" }, null)</li>
+                <li>@Html.ActionLink("Generations", "Index", "Home", new { routeName = "generations" }, null)</li>
+                <li>@Html.ActionLink("Frequently Asked Questions", "Index", "Home", new { routeName = "frequently-asked-questions" }, null)</li>
+                <li>@Html.ActionLink("About", "Index", "Home", new { routeName = "about" }, null)</li>
+                <li>@Html.ActionLink("Contact", "Index", "Home", new { routeName = "contact" }, null)</li>
+            </ul>
+        </div>
+    </div>
     </div>
     <div class="container">
         <div>
             <img class="img-responsive header-content img-rounded" src="~/Content/Images/cropped-family_portrait2.jpg" />
         </div>
         <div class="body">
-            <hr/>
+            <hr />
             <div class="body-content">
                 @RenderBody()
             </div>

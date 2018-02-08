@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -30,11 +30,24 @@ textarea {
 }
 
 #mainMenu > li > a {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .navbar-default {
     background: #fff;    
+}
+
+navbar-brand {
+
+}
+
+#mainMenu > li > a:hover {
+    background-color: #dde8f3;
+    color: black;
+}
+
+.pageTitle {
+    margin-bottom: 20px;
 }
 
 
