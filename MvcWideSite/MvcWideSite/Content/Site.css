@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 70px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,3 +28,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#mainMenu > li > a {
+    font-size: 1.2em;
+}
+
+.navbar-default {
+    background: #fff;    
+}
+
+

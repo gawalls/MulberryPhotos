@@ -7,19 +7,19 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>    
-        <div class="navbar navbar-default navbar-fixed-top">
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
+                <img class="navbar-brand" alt="header image" src="~/Content/Images/mulberry_photos_header.jpg" />
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @*@Html.ActionLink("Mulberry Photos", "Index", "Home", new { area = "", routeName = "home" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul id="mainMenu" class="nav navbar-nav">
                     <li>@Html.ActionLink("Welcome", "Index", "Home", new { routeName = "home" }, null)</li>
                     <li>@Html.ActionLink("Family Portraits", "Index", "Home", new { routeName = "family" }, null)</li>
                     <li>@Html.ActionLink("Babies and Toddlers", "Index", "Home", new { routeName = "babies-and-toddlers" }, null)</li>
@@ -28,16 +28,16 @@
                     <li>@Html.ActionLink("Frequently Asked Questions", "Index", "Home", new { routeName = "frequently-asked-questions" }, null)</li>
                     <li>@Html.ActionLink("About", "Index", "Home", new { routeName = "about" }, null)</li>
                     <li>@Html.ActionLink("Contact", "Index", "Home", new { routeName = "contact" }, null)</li>
-                </ul>                
-            </div>            
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container">
         <div>
-            <img class="img-responsive header-content" alt="header image" src="~/Content/Images/mulberry_photos_header.jpg" />
             <img class="img-responsive header-content img-rounded" src="~/Content/Images/cropped-family_portrait2.jpg" />
         </div>
         <div class="body">
+            <hr/>
             <div class="body-content">
                 @RenderBody()
             </div>
