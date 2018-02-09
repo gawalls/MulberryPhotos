@@ -1,31 +1,56 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model MvcWideSite.ViewModels.WebPageViewModel
+
+@{
+    ViewBag.Title = @Html.Raw(Model.Title);
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="pageTitle">
+    <h1>@Model.Title</h1>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+@foreach (var content in Model.ContentList)
+{
+    <div id="@content.Name" name="@content.Name">
+        @Html.Raw(content.HtmlContent)
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+}
+
+@if (Model.Title.ToUpper() == "CONTACT")
+{
+    using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div class="userForm form-horizontal">
+            <div class="form-group">
+                <label for="Name" class="col-xs-3 col-sm-2 control-label">Name</label>
+                <div class="col-xs-9 col-sm-10">
+                    <input type="text" class="form-control" id="Name" name="Name" placeholder="Name" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Email" class="col-xs-3 col-sm-2 control-label">Email</label>
+                <div class="col-xs-9 col-sm-10">
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Phone" class="col-xs-3 col-sm-2 control-label">Telephone</label>
+                <div class="col-xs-9 col-sm-10">
+                    <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Telephone Number" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Comments" class="col-xs-3 col-sm-2 control-label">Comments</label>
+                <div class="col-xs-9 col-sm-10">
+                    <textarea class="form-control" name="comments" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="well">
+                <button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
+
+            </div>
+        </div>
+    }
+}

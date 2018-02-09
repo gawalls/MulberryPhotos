@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MulberryPhotos.DataAccess.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,6 +15,6 @@ namespace MulberryPhotos.DataAccess.Interfaces
 
         List<IWebImage> ImageList { get;  }
 
-        List<IWebSectionContent> WebSections { get; }
+        List<IWebSectionContent> WebSections { get; }        
     }
 }
