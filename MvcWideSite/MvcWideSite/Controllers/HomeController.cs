@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MulberryPhotos.DataAccess.Enums;
+using MvcWideSite.Models;
 using MvcWideSite.ViewModels;
 
 namespace MvcWideSite.Controllers
@@ -13,7 +14,7 @@ namespace MvcWideSite.Controllers
         public ActionResult Index(string routeName = null)
         {
             if (routeName == null)
-                routeName = "home";
+                routeName = Constants.RoutingNames.Home;
 
             WebPageViewModel model = WebSiteViewModelService.GetViewModel(routeName);
 
@@ -21,17 +22,32 @@ namespace MvcWideSite.Controllers
             {
                 return HttpNotFound($"{routeName} not found");
             }
-
+            
             return View(model);            
         }
-        
-        
-        public JsonResult SaveEnquiry(string name, string email, string comments)
+
+        public ActionResult Contact()
         {
-            JsonResult result = new JsonResult();
-            result.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
-            result.Data = true;
-            return result;
+            EnquiryViewModel model = WebSiteViewModelService.GetEnquiryViewModel();
+
+            if (model == null)
+            {
+                return HttpNotFound($"{Constants.RoutingNames.Contact} not found");
+            }
+
+            return View(model);
         }
+
+        [HttpPost]
+        public ActionResult Contact(EnquiryViewModel model)
+        {
+            model = WebSiteViewModelService.GetEnquiryViewModel(model);
+            
+            if (ModelState.IsValid)
+            {
+                throw new NotImplementedException("Save method will go here - once the database and email of the hosting server is joined up.");
+            }
+            return View(model);
+        }             
     }
 }

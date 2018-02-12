@@ -14,6 +14,12 @@ namespace MvcWideSite
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "ContactContent",
+                url: "contact",
+                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "ServeContent",
                 url: "{routeName}",
                 defaults: new { controller = "Home", action = "Index", routeName = "Home" }

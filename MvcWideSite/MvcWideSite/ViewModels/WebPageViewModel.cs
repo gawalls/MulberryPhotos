@@ -17,7 +17,9 @@ namespace MvcWideSite.ViewModels
         public List<ImageViewModel> Images { get; set; } = new List<ImageViewModel>();
 
         public List<ContentSectionViewModel> ContentList { get; set; } = new List<ContentSectionViewModel>();
-      
+
+        public EnquiryViewModel Enquiry { get; set; }
+                   
         public WebPageViewModel()
         {
             

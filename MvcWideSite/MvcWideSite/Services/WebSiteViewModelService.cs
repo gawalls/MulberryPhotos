@@ -36,8 +36,26 @@ namespace MvcWideSite.Services
             return GetWebPageViewModel(page);
         }
 
+        public EnquiryViewModel GetEnquiryViewModel()
+        {
+            WebPageViewModel pageViewModel = GetViewModel(Constants.RoutingNames.Contact);
+            return new EnquiryViewModel(pageViewModel.Name, pageViewModel.Title, pageViewModel.MetaData, pageViewModel.Images, pageViewModel.ContentList);
+        }
+
+        public EnquiryViewModel GetEnquiryViewModel(EnquiryViewModel model)
+        {
+            WebPageViewModel pageViewModel = GetViewModel(Constants.RoutingNames.Contact);
+            EnquiryViewModel enquiryViewModel = new EnquiryViewModel(pageViewModel.Name, pageViewModel.Title, pageViewModel.MetaData, 
+                pageViewModel.Images, pageViewModel.ContentList);
+            enquiryViewModel.EnquiryName = model.EnquiryName;
+            enquiryViewModel.Phone = model.Phone;
+            enquiryViewModel.Comments = model.Comments;
+            enquiryViewModel.Email = model.Email;
+            return enquiryViewModel;
+        }
+
         #region helpers
-        
+
         private WebPageViewModel GetWebPageViewModel(IWebPage webPage)
         {
             List<ImageViewModel> imageViewModels = new List<ImageViewModel>();
@@ -60,8 +78,8 @@ namespace MvcWideSite.Services
                 contentViewModels
             );
         }
-
         
+
         #endregion
 
     }

@@ -1,4 +1,5 @@
-﻿using MulberryPhotos.DataAccess.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using MulberryPhotos.DataAccess.Enums;
 using MvcWideSite.Enums;
 
 namespace MvcWideSite.Models
@@ -23,7 +24,7 @@ namespace MvcWideSite.Models
         {
             switch (routeName.ToLower())
             {
-                case "home":
+                case Constants.RoutingNames.Home:
                     return new RoutingValue(routeName, WebPageNameEnum.HomePage, RoutingEnum.Home);
 
                 case "family":
@@ -47,12 +48,17 @@ namespace MvcWideSite.Models
                 case "about":
                     return new RoutingValue(routeName, WebPageNameEnum.About, RoutingEnum.About);
 
-                case "contact":
+                case Constants.RoutingNames.Contact:
                     return new RoutingValue(routeName, WebPageNameEnum.Contact, RoutingEnum.Contact);
 
                 default:
                     return null;
             }
-        }       
+        }
+
+        public static RoutingValue ContactRouteValue
+        {
+            get { return RoutingValue.Get("contact"); }
+        }
     }
 }

@@ -154,6 +154,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\WebSiteViewModelService.cs" />
     <Compile Include="ViewModels\ContentSectionViewModel.cs" />
+    <Compile Include="ViewModels\EnquiryViewModel.cs" />
     <Compile Include="ViewModels\ImageViewModel.cs" />
     <Compile Include="ViewModels\MetaDataViewModel.cs" />
     <Compile Include="ViewModels\WebPageViewModel.cs" />
@@ -196,6 +197,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
