@@ -37,7 +37,7 @@ textarea {
     background: #fff;    
 }
 
-navbar-brand {
+.navbar-brand {
 
 }
 
@@ -52,6 +52,11 @@ navbar-brand {
 
 .userForm {
     padding-top: 50px;
+}
+
+.field-validation-error {
+    color: red;
+    font-weight: bold;
 }
 
 

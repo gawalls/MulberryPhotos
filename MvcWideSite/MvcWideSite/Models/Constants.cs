@@ -20,5 +20,11 @@ namespace MvcWideSite.Models
                 }
             }
         }
+
+        public static class RoutingNames
+        {
+            public const string Home = "home";
+            public const string Contact = "contact";
+        }
     }
 }
