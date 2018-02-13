@@ -1,6 +1,9 @@
 ﻿body {
+    font-family: 'Quattrocento Sans', sans-serif;
     padding-top: 100px;
     padding-bottom: 20px;
+    font-size: 16px;
+    color: #666;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -30,7 +33,12 @@ textarea {
 }*/
 
 #mainMenu > li > a {
-    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
 }
 
 .navbar-default {
@@ -55,8 +63,7 @@ textarea {
 }
 
 .field-validation-error {
-    color: red;
-    font-weight: bold;
+    color: Red;    
 }
 
 

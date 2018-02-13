@@ -6,6 +6,7 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <meta name="robots" content="noindex"/>
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -24,7 +25,7 @@
                 <li>@Html.ActionLink("Welcome", "Index", "Home", new { routeName = "home" }, null)</li>
                 <li>@Html.ActionLink("Family Portraits", "Index", "Home", new { routeName = "family" }, null)</li>
                 <li>@Html.ActionLink("Babies and Toddlers", "Index", "Home", new { routeName = "babies-and-toddlers" }, null)</li>
-                <li>@Html.ActionLink("Childrens and Teens", "Index", "Home", new { routeName = "childrens-and-teens" }, null)</li>
+                <li>@Html.ActionLink("Children and Teens", "Index", "Home", new { routeName = "childrens-and-teens" }, null)</li>
                 <li>@Html.ActionLink("Generations", "Index", "Home", new { routeName = "generations" }, null)</li>
                 <li>@Html.ActionLink("Frequently Asked Questions", "Index", "Home", new { routeName = "frequently-asked-questions" }, null)</li>
                 <li>@Html.ActionLink("About", "Index", "Home", new { routeName = "about" }, null)</li>
@@ -32,7 +33,7 @@
             </ul>
         </div>
     </div>
-    </div>
+    
     <div class="container">
         <div>
             <img class="img-responsive header-content img-rounded" src="~/Content/Images/cropped-family_portrait2.jpg" />
@@ -48,5 +49,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
 </body>
 </html>
