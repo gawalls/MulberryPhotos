@@ -46,17 +46,14 @@ namespace MvcWideSite.Controllers
         {
             model.EmailSent = false;
             model = WebSiteViewModelService.GetEnquiryViewModel(model);
-
+            
             if (ModelState.IsValid)
             {
-                MailMessage message = new MailMessage($"{model.Email}", "gary.a.walls@gmail.com");
+                MailMessage message = new MailMessage($"{model.Email}", model.ToEmailAddress);
                 message.Subject = "Mulberry photos enquiry";
                 message.Body = model.HtmlMessageBody;
                 message.IsBodyHtml = true;
 
-
-                int port = 25;
-                string host = "mail.mulberryphotos.co.uk";
                 using (SmtpClient smtp = new SmtpClient())
                 {
                     smtp.Send(message);
