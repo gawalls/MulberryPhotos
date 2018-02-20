@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Hosting;
@@ -26,5 +27,7 @@ namespace MvcWideSite.Models
             public const string Home = "home";
             public const string Contact = "contact";
         }
-    }
+
+        public const string ToLookupValue = "ToEmailAddress";
+    }    
 }

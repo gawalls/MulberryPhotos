@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using MulberryPhotos.DataAccess.Enums;
@@ -22,8 +25,8 @@ namespace MvcWideSite.Controllers
             {
                 return HttpNotFound($"{routeName} not found");
             }
-            
-            return View(model);            
+
+            return View(model);
         }
 
         public ActionResult Contact()
@@ -41,13 +44,23 @@ namespace MvcWideSite.Controllers
         [HttpPost]
         public ActionResult Contact(EnquiryViewModel model)
         {
+            model.EmailSent = false;
             model = WebSiteViewModelService.GetEnquiryViewModel(model);
             
             if (ModelState.IsValid)
             {
-                throw new NotImplementedException("Save method will go here - once the database and email of the hosting server is joined up.");
+                MailMessage message = new MailMessage($"{model.Email}", model.ToEmailAddress);
+                message.Subject = "Mulberry photos enquiry";
+                message.Body = model.HtmlMessageBody;
+                message.IsBodyHtml = true;
+
+                using (SmtpClient smtp = new SmtpClient())
+                {
+                    smtp.Send(message);
+                    model.EmailSent = true;
+                }
             }
             return View(model);
-        }             
+        }
     }
 }
