@@ -6,7 +6,9 @@
 
 @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
 {
-    @*@Html.DisplayFor(m => m.Images)*@
+    <div class="hidden-xs">
+        @Html.DisplayFor(m => m.Images)
+    </div>
 
     <div class="pageTitle">
         <h1>@Model.Title</h1>
@@ -58,10 +60,10 @@
                 </div>
             </div>
 
-            <div class="">                
+            <div class="">
                 <div class="pull-right">
                     <button type="submit" class="btn btn-primary padding-right-15px"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
-                </div>                
+                </div>
             </div>
         </div>
     }
