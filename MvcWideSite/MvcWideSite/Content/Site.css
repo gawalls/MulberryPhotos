@@ -42,11 +42,10 @@ h1 {
 }
 
 .navbar-default {
-    background: #fff;    
+    background: #fff;
 }
 
 .navbar-brand {
-
 }
 
 #mainMenu > li > a:hover {
@@ -63,7 +62,38 @@ h1 {
 }
 
 .field-validation-error {
-    color: Red;    
+    color: #d43f3a;
 }
 
+.carousel-image {
+    width: 100%
+}
+
+.content-display {
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+#mainCarousel {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width: 1000px) {
+    #mainCarousel {
+        width: 937px;
+    }
+}
+
+/*.padding-right-15px {
+    margin-right: 15px;
+}*/
+
+.btn-primary {
+    color: #ffffff;    
+    background-color: #6699cc;
+    border-color: #6699cc;
+}
 

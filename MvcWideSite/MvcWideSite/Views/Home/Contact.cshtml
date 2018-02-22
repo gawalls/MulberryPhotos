@@ -6,6 +6,8 @@
 
 @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
 {
+    @*@Html.DisplayFor(m => m.Images)*@
+
     <div class="pageTitle">
         <h1>@Model.Title</h1>
     </div>
@@ -27,7 +29,7 @@
             <div class="form-group">
                 <label for="Name" class="col-xs-3 col-sm-2 control-label">Name</label>
                 <div class="col-xs-9 col-sm-10">
-                    @Html.TextBoxFor(m => m.EnquiryName, new {@class = "form-control"})
+                    @Html.TextBoxFor(m => m.EnquiryName, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.EnquiryName)
                 </div>
             </div>
@@ -35,7 +37,7 @@
             <div class="form-group">
                 <label for="Email" class="col-xs-3 col-sm-2 control-label">Email</label>
                 <div class="col-xs-9 col-sm-10">
-                    @Html.TextBoxFor(m => m.Email, new {@class = "form-control"})
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Email)
                 </div>
             </div>
@@ -43,7 +45,7 @@
             <div class="form-group">
                 <label for="Phone" class="col-xs-3 col-sm-2 control-label">Telephone</label>
                 <div class="col-xs-9 col-sm-10">
-                    @Html.TextBoxFor(m => m.Phone, new {@class = "form-control"})
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Phone)
                 </div>
             </div>
@@ -51,12 +53,15 @@
             <div class="form-group">
                 <label for="Comments" class="col-xs-3 col-sm-2 control-label">Comments</label>
                 <div class="col-xs-9 col-sm-10">
-                    @Html.TextAreaFor(m => m.Comments, 3, 3, new {@class = "form-control"})
+                    @Html.TextAreaFor(m => m.Comments, 3, 3, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Comments)
                 </div>
             </div>
-            <div class="well">
-                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
+
+            <div class="">                
+                <div class="pull-right">
+                    <button type="submit" class="btn btn-primary padding-right-15px"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
+                </div>                
             </div>
         </div>
     }

@@ -1,0 +1,49 @@
+﻿@model MvcWideSite.ViewModels.ImageListViewModel
+
+@if (Model.HasManyImages)
+{
+    <div>
+        <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    string className = i == 0 ? "active" : "";
+                    <li data-target="#mainCarousel" data-slide-to="0" class="@className"></li>
+                }
+            </ol>
+
+            <div class="carousel-inner">
+                @{
+                    bool hasActive = false;
+                    foreach (var image in Model)
+                    {
+                        string className = "item";
+                        if (!hasActive)
+                        {
+                            className += " active";
+                            hasActive = true;
+                        }
+
+                        <div class="@className">
+                            <img class="carousel-image img-rounded" src="/Content/Images/@image.FullFilename" alt="@image.Name">
+                        </div>
+                    }
+                }
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+}
+else
+{
+    <img class="img-responsive img-rounded header-content" src="~/Content/Images/cropped-family_portrait2.jpg" /> 
+}    
