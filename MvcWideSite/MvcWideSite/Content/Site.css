@@ -1,6 +1,6 @@
 ﻿body {
     font-family: 'Quattrocento Sans', sans-serif;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 20px;
     font-size: 16px;
     color: #666;
@@ -15,7 +15,6 @@
 .header-content {
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 @media (max-width: 388px) {
@@ -44,9 +43,36 @@ textarea {
     max-width: 280px;
 }*/
 
+.navbar-default {
+    background: #fff;
+}
+
+@media(max-width: 388px) {
+    .navbar-brand {
+        width: 75%;
+    }
+}
+
+#mainMenu {    
+    text-align: center;
+}
+
 #mainMenu > li > a {
     font-family: 'Cinzel', serif;
-    font-size: 13px;
+    font-size: 13px;    
+}
+
+#mainMenu > li > a:hover {
+    background-color: #dde8f3;
+    color: black;
+}
+
+
+@media (min-width: 768px) and (max-width: 1118px) {
+    #mainMenu > li > a {
+        padding: 5px;
+        font-size: 10px;
+    }
 }
 
 h1 {
@@ -57,7 +83,7 @@ h1 {
 
 
 .pageTitle {
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
 @media(min-width: 768px) {
@@ -66,18 +92,6 @@ h1 {
         font-size: 36px;
         text-align: left;
     }
-}
-
-.navbar-default {
-    background: #fff;
-}
-
-.navbar-brand {
-}
-
-#mainMenu > li > a:hover {
-    background-color: #dde8f3;
-    color: black;
 }
 
 .userForm {
@@ -115,8 +129,7 @@ h1 {
 }*/
 
 .btn-primary {
-    color: #ffffff;    
+    color: #ffffff;
     background-color: #6699cc;
     border-color: #6699cc;
 }
-
