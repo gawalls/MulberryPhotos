@@ -51,6 +51,21 @@ textarea {
 
 h1 {
     font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.pageTitle {
+    margin-bottom: 20px;    
+}
+
+@media(min-width: 768px) {
+    h1 {
+        margin-top: 50px;
+        font-size: 36px;
+        text-align: left;
+    }
 }
 
 .navbar-default {
@@ -63,10 +78,6 @@ h1 {
 #mainMenu > li > a:hover {
     background-color: #dde8f3;
     color: black;
-}
-
-.pageTitle {
-    margin-bottom: 20px;
 }
 
 .userForm {
