@@ -58,10 +58,11 @@ namespace MvcWideSite.Services
 
         private WebPageViewModel GetWebPageViewModel(IWebPage webPage)
         {
-            List<ImageViewModel> imageViewModels = new List<ImageViewModel>();
+            ImageListViewModel imageList = new ImageListViewModel();
+            
             foreach (IWebImage image in webPage.ImageList)
             {
-                imageViewModels.Add(new ImageViewModel(image.Name, image.FullFilename));
+                imageList.Add(new ImageViewModel(image.Name, image.FullFilename, GetImageType(image.ImageType), image.RotationOrder));
             }
                 
             List<ContentSectionViewModel> contentViewModels = new List<ContentSectionViewModel>();
@@ -74,11 +75,23 @@ namespace MvcWideSite.Services
                 webPage.Name, 
                 webPage.Title, 
                 new MetaDataViewModel(webPage.MetaData.MetaTitle),
-                imageViewModels,
+                imageList,
                 contentViewModels
             );
         }
-        
+
+        private ImageTypeEnum GetImageType(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+                return ImageTypeEnum.Other;
+
+            if (Enum.IsDefined(typeof(ImageTypeEnum), value))
+            {
+                return (ImageTypeEnum) Enum.Parse(typeof(ImageTypeEnum), value);
+            }
+
+            return ImageTypeEnum.Other;
+        }
 
         #endregion
 

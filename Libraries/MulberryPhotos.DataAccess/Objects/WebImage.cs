@@ -12,11 +12,22 @@ namespace MulberryPhotos.DataAccess.Objects
         public string Name { get; set; }
 
         public string FullFilename { get; set; }
+        public string ImageType { get; }
+        public int? RotationOrder { get; set; }
 
-        public WebImage(string name, string fullFilename)
+        public WebImage(string name, string fullFilename, string imageType)
         {
             Name = name;
             FullFilename = fullFilename;
+            ImageType = imageType;
+        }
+
+        public WebImage(string name, string fullFilename, string imageType, int rotationOrder)
+        {
+            Name = name;
+            FullFilename = fullFilename;
+            ImageType = imageType;
+            RotationOrder = rotationOrder;
         }
     }
 }

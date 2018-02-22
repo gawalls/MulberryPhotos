@@ -56,5 +56,8 @@
     <Compile Include="Services\WebContentService.cs" />
     <Compile Include="Services\XmlWebContentService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTMLPage1.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

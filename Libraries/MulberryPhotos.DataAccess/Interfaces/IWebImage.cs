@@ -9,5 +9,9 @@ namespace MulberryPhotos.DataAccess.Interfaces
         string Name { get; }
 
         string FullFilename { get; }
+
+        string ImageType { get; }
+
+        int? RotationOrder { get; }
     }
 }

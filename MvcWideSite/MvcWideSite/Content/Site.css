@@ -1,6 +1,6 @@
 ﻿body {
     font-family: 'Quattrocento Sans', sans-serif;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 20px;
     font-size: 16px;
     color: #666;
@@ -15,7 +15,18 @@
 .header-content {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+}
+
+@media (max-width: 388px) {
+    .header-content {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1433px) {
+    .header-content {
+        margin-top: 70px;
+    }
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -32,21 +43,23 @@ textarea {
     max-width: 280px;
 }*/
 
+.navbar-default {
+    background: #fff;
+}
+
+@media(max-width: 388px) {
+    .navbar-brand {
+        width: 75%;
+    }
+}
+
+#mainMenu {    
+    text-align: center;
+}
+
 #mainMenu > li > a {
     font-family: 'Cinzel', serif;
-    font-size: 13px;
-}
-
-h1 {
-    font-family: 'Cinzel', serif;
-}
-
-.navbar-default {
-    background: #fff;    
-}
-
-.navbar-brand {
-
+    font-size: 13px;    
 }
 
 #mainMenu > li > a:hover {
@@ -54,8 +67,31 @@ h1 {
     color: black;
 }
 
+
+@media (min-width: 768px) and (max-width: 1118px) {
+    #mainMenu > li > a {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+
 .pageTitle {
     margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        margin-top: 50px;
+        font-size: 36px;
+        text-align: left;
+    }
 }
 
 .userForm {
@@ -63,7 +99,37 @@ h1 {
 }
 
 .field-validation-error {
-    color: Red;    
+    color: #d43f3a;
 }
 
+.carousel-image {
+    width: 100%
+}
 
+.content-display {
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+#mainCarousel {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width: 1000px) {
+    #mainCarousel {
+        width: 937px;
+    }
+}
+
+/*.padding-right-15px {
+    margin-right: 15px;
+}*/
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #6699cc;
+    border-color: #6699cc;
+}

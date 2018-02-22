@@ -4,13 +4,16 @@
     ViewBag.Title = @Html.Raw(Model.Title);
 }
 
-<div class="pageTitle">
-    <h1>@Model.Title</h1>
-</div>
+    @Html.DisplayFor(m => m.Images.CarouselImages)
 
-@foreach (var content in Model.ContentList)
-{
-    <div id="@content.Name" name="@content.Name">
-        @Html.Raw(content.HtmlContent)
+
+    <div class="pageTitle">
+        <h1>@Model.Title</h1>
     </div>
-}
+
+    @foreach (var content in Model.ContentList)
+    {
+        <div id="@content.Name" name="@content.Name" class="content-display">
+            @Html.Raw(content.HtmlContent)
+        </div>
+    }

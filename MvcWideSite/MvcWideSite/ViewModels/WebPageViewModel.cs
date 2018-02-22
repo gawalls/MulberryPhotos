@@ -14,7 +14,7 @@ namespace MvcWideSite.ViewModels
 
         public MetaDataViewModel MetaData { get; set; } = new MetaDataViewModel();
 
-        public List<ImageViewModel> Images { get; set; } = new List<ImageViewModel>();
+        public ImageListViewModel Images { get; set; } = new ImageListViewModel();
 
         public List<ContentSectionViewModel> ContentList { get; set; } = new List<ContentSectionViewModel>();
 
@@ -25,7 +25,7 @@ namespace MvcWideSite.ViewModels
             
         }
 
-        public WebPageViewModel(string name, string title, MetaDataViewModel metaData, List<ImageViewModel> images, List<ContentSectionViewModel> contentList)
+        public WebPageViewModel(string name, string title, MetaDataViewModel metaData, ImageListViewModel images, List<ContentSectionViewModel> contentList)
         {
             Name = name;
             Title = title;

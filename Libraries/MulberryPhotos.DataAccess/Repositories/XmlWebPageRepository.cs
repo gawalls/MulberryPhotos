@@ -80,10 +80,17 @@ namespace MulberryPhotos.DataAccess.Repositories
             {
                 if (item.Attributes != null)
                 {
-                    string imageType = item?.Attributes["Name"].Value;                
+                    string name = item.Attributes["Name"].Value;                
                     string filename = item.InnerText;
+                    string imageType = item.Attributes["Type"]?.Value;
+                    WebImage image = new WebImage(name, filename, imageType);
 
-                    WebImage image = new WebImage(imageType, filename);
+                    string rotationStrValue = item.Attributes["RotationOrder"]?.Value;
+                    if (!string.IsNullOrEmpty(rotationStrValue))
+                    {
+                        int? rotationOrder = Convert.ToInt32(rotationStrValue);
+                        image.RotationOrder = rotationOrder;
+                    }                                        
                     images.Add(image);
                 }
             }

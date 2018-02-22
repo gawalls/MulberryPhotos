@@ -35,7 +35,7 @@ namespace MvcWideSite.ViewModels
         {
         }
 
-        public EnquiryViewModel(string name, string title, MetaDataViewModel metaData, List<ImageViewModel> images, List<ContentSectionViewModel> contentList)
+        public EnquiryViewModel(string name, string title, MetaDataViewModel metaData, ImageListViewModel images, List<ContentSectionViewModel> contentList)
             : base(name, title, metaData, images, contentList)
         {
         }

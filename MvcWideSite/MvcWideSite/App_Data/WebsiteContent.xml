@@ -7,14 +7,15 @@
       <MetaTitle>exclusive documentary family portraits in London and the surrounding counties</MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
-      <Image Name="banner">cropped-family_portrait2.jpg</Image>
+      <Image Name="banner1" Type="Carousel" RotationOrder="1">cropped-family_portrait2.jpg</Image>
+      <Image Name="banner2" Type="Carousel" RotationOrder="2">BannerImage2.jpg</Image>
+      <Image Name="banner3" Type="Carousel" RotationOrder="3">BannerImage3.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="WELCOME">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">
+          <div>
 <p>Welcome to Mulberry Photos, offering creative documentary family portraiture in London and the surrounding counties.  Our clients are from all over the UK, and book us for our family art that captures the joy and love of childhood and family life.</p>
 <p>We photograph you and your children in your natural surroundings – your home and your favourite outdoor places.  For many years to come, we want you to look back at your beautiful portfolio and remember the moment in time that we captured for you.  The decades will slip away and priorities will change – but open your album or leaf through your prints, and you’ll be transported back to that time and place – in beautiful art that will become a true family keepsake – see about Mulberry Photos for more information on our philosophy about family portraits.</p>
 <p>Whether it’s to welcome a newborn into your family or a portrait that brings together several generations, contact us to book your session.</p>
@@ -31,14 +32,13 @@
       <MetaTitle>family portraits | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="FAMILY PORTRAITS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">The lives of children revolves around the family.&nbsp; Whether you have small children who depend on you for everything, or older kids who think they’re independent as they have other demands on their time – mum and dad are the centre of their world.&nbsp; The family unit is the safe haven, the foundation which shapes the rest of their lives.&nbsp; Yet, the vast majority of the snaps people take are of the children only.&nbsp; Looking back on your own childhood, how many photos do you have of you with your own parents?&nbsp; Someone was always holding the camera, and many of us therefore have very little record of us as a family.<p></p>
+          <div>The lives of children revolves around the family.&nbsp; Whether you have small children who depend on you for everything, or older kids who think they’re independent as they have other demands on their time – mum and dad are the centre of their world.&nbsp; The family unit is the safe haven, the foundation which shapes the rest of their lives.&nbsp; Yet, the vast majority of the snaps people take are of the children only.&nbsp; Looking back on your own childhood, how many photos do you have of you with your own parents?&nbsp; Someone was always holding the camera, and many of us therefore have very little record of us as a family.<p></p>
 <p>We know, though, that many parents really don’t like posing for the camera which is why we suggest only a few photographs like that.&nbsp; But imagine, years from now, your children having a beautiful collection of photographs of them at key moments in their childhoods showing their relationship with you.&nbsp; As babies – giggling uncontrollably and adoringly at you, guiding them to their first steps, gazing longingly at the daisy chain you’re making.&nbsp; As children – sharing a bike ride with you, helping you to bake, showing off their latest reading skills.&nbsp; As teens – trying to beat you at running, walking arm in arm along the river, sharing a family game of cricket.</p>
 <p>Who you are as a family changes over the years, but with documentary family portraits, you’ll have a collection that will bring those days back in an instant.</p>
 <p><em><strong>The individual, the group</strong></em></p>
@@ -59,14 +59,13 @@
       <MetaTitle>babies and toddles | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="BABIES AND TODDLERS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">Ask older relatives to recall their children when they were very young, and they’ll probably struggle to remember more than a few key moments.  Of course they’ll remember the big events, and certainly they’ll have many photographs of what they actually looked like – we’re always grabbing the phone or camera and trying to get them to look at us.<p></p>
+          <div>Ask older relatives to recall their children when they were very young, and they’ll probably struggle to remember more than a few key moments.  Of course they’ll remember the big events, and certainly they’ll have many photographs of what they actually looked like – we’re always grabbing the phone or camera and trying to get them to look at us.<p></p>
 <p>The one thing most parents of older children will say though is how fast those first couple of years goes.  There’s nothing more carefree than very small children, and family life during that time.  Everything is an adventure, every day brings new discoveries – and it’s this story board of life that we capture in documentary family photography – and baby portraits are about so much more than the fleeting changes in how they look.</p>
 <p>When you book with Mulberry, there will probably be a family portrait of course, but also the moments that will transport you back to these days.  The tight grasp of your newborn on your finger, the uncontrollable giggle of your baby as they are thrown in the air, the wonder of a butterfly landing on the hand of your toddler, the delight of your child as they run around catching bubbles, splashing in puddles, flying on swings.</p>
 <p>Family life</p>
@@ -88,14 +87,13 @@
       <MetaTitle>childrens and teens | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="CHILDRENS AND TEENS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">The focus of many children’s portraits is on very young children, but as they get older and their personalities emerge and separate from their parents – that’s a wonderful, endlessly fun time.  It’s at this age that you can see the adult they will one day be start to emerge.  Sporty and active, quiet, thoughtful, kind, intrigued, noisy – most older kids and teens are all of these and more in one day. <p></p>
+          <div>The focus of many children’s portraits is on very young children, but as they get older and their personalities emerge and separate from their parents – that’s a wonderful, endlessly fun time.  It’s at this age that you can see the adult they will one day be start to emerge.  Sporty and active, quiet, thoughtful, kind, intrigued, noisy – most older kids and teens are all of these and more in one day. <p></p>
 <p>It’s also the time when your job as parents is at its most rewarding – you’ve already cared for them when they were totally dependent on you, but they haven’t yet found their place in the world.  It’s a time when they will explore and discover, trying out different things to decide what they love.  The relationship shifts to one of guidance as they explore independently, to a time of understanding who they are – and, in the case of teens, to them discovering who you are too.</p>
 <p>The things that your child will love most at seven, ten, fifteen will either become a lifelong passion or tried and discarded.  Either way, documenting these years will provoke much laughter and nostalgia later on.  “Remember when you loved ballet, animals and drawing and you wanted to be a dancer – but you became a vet, even though you look squeamish here when you found a snail in the garden”.  “You were idealistic back then, you put a blue streak in your hair right before the portrait session and you only really wanted to play music – who’d have thought you’d be working hard at your physics degree a few years later”.</p>
 <p><strong>A moment in time</strong></p>
@@ -116,14 +114,13 @@
       <MetaTitle>generations |</MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="GENERATIONS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">I come from a large family, I’m one of five kids.  As we’ve all grown and had families of our own, the immediate family group – grandparents, adult kids, their spouses and kids – has grown to 24 people.  Until a few years ago, there were great-grandparents too.  You can imagine the logistics of trying to get everyone together for a group photo.  We managed it about 3 years ago, but we probably won’t do it again for another 20 years.<p></p>
+          <div>I come from a large family, I’m one of five kids.  As we’ve all grown and had families of our own, the immediate family group – grandparents, adult kids, their spouses and kids – has grown to 24 people.  Until a few years ago, there were great-grandparents too.  You can imagine the logistics of trying to get everyone together for a group photo.  We managed it about 3 years ago, but we probably won’t do it again for another 20 years.<p></p>
 <p>A family portrait session is the perfect time to get everyone together to do just that.  Part of your session can include grandparents too – in fact, we’d encourage it.  Either a formal family grouping in the park, or everyone getting involved in an activity – it’s a once-in-a-generation event.</p>
 <p>The relationship between kids and grandparents can be very special.  No matter what age your children, no matter how old they get – grandma and grandad will probably be their favourite people in the world (even more than you sometimes!).  A collection that shows this relationship will be magical as your child grows, and it will treasured for many generations to come.</p>
 <p><strong>The family tree</strong></p>
@@ -142,14 +139,13 @@
       <MetaTitle>prices and products | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="PRICES AND PRODUCTS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">
+          <div>
 <p style="text-align:left;">Our product portfolio is designed to make the most of your portrait session. Documentary portraiture is about telling a story – and capturing a moment in your family story is just the start of it. How you choose to record that story is up to you.</p>
 <p style="text-align:left;"><strong>Portrait session fee</strong></p>
 <p style="text-align:left;">We come to you – portrait sessions take place in your home, and outside in local parks and beauty spots. Prices are valid for sessions taking place in any London postcode, for locations further afield please contact us. Your session fee is for our time only, products are purchased afterwards at your viewing session from the options below.</p>
@@ -194,14 +190,13 @@
       <MetaTitle>frequently asked questions | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="FREQUENTLY ASKED QUESTIONS">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;"><strong>What family portrait times do you offer and how long will it last?</strong><br>
+          <div><strong>What family portrait times do you offer and how long will it last?</strong><br>
 We only photograph one portrait session per day, and it starts at 9am – we’ll be with you all morning.  We will, if absolutely necessary, start your session later (up to 4pm), but we have a number of reasons for advising the 9am start.  Everyone is usually well rested, and babies certainly are more co-operative.  Children by their very nature begin their day eager and excited, and tend to flag a little as it goes on.  Additionally it means you can plan the rest of your day after we’re done, rather than trying to get everything finished for when we arrive in the afternoon.  If you’re sure you want a later appointment, we advise that you keep the time before we arrive as quiet and activity-free so that they’re raring to go when we arrive. <p></p>
 <p><strong>Tell me about the process of our booking?</strong><br>
 After you contact us with your initial enquiry, we’ll call you to discuss what will work best for your family – activity and location suggestions, dates and times, any concerns you have.  Once you’ve decided to book, we’ll take your session fee payment (please see our prices and products page for session fees).  Your booking will be confirmed in writing and we’ll send you some information on how to prepare for your portrait session.  Two days beforehand, we’ll call you to confirm all the details.  After the session we’ll make an appointment to visit you at home for your viewing session at a convenient time, and you’ll be able to view all the images on our high quality screen – usually around 80 photographs.  We’ll also bring samples of our frames, prints and albums so that you can make an informed choice on how best to display your photography.  After you have placed your order, we will deliver your products at a time to suit you – usually within 4 weeks of your viewing session.  Our aim is to make the entire process as smooth and efficient as possible, and you can contact us at any time.</p>
@@ -240,14 +235,13 @@ Very minimal, we’re happy to remove things like spots and runny noses.  If you
       <MetaTitle>about | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
       <Image Name="banner">cropped-family_portrait2.jpg</Image>
     </Images>
     <Sections>
       <Section Name="Main" Title="ABOUT">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">It all began in 1998 when my mother gave me a box of old photos dating back to the early 20th century. Not just photographs of my direct ancestors, but the extended family – most of whom I knew nothing about. I pored over the hundreds of snaps, dating and cataloguing them in order so I could see how relatives had changed over time. Stiffly formal photos, popular at the turn of that century, gave way to fun and carefree family photos as my grandparents got older and had families of their own.<p></p>
+          <div>It all began in 1998 when my mother gave me a box of old photos dating back to the early 20th century. Not just photographs of my direct ancestors, but the extended family – most of whom I knew nothing about. I pored over the hundreds of snaps, dating and cataloguing them in order so I could see how relatives had changed over time. Stiffly formal photos, popular at the turn of that century, gave way to fun and carefree family photos as my grandparents got older and had families of their own.<p></p>
 <p>It was these photos that intrigued me. My grandmother had been getting older and more frail – she passed away in 2003 – and I wanted to know who she was when she was a girl, a bride, a new mother.</p>
 <p>Photographs gave that to me. Laughing in the garden with her two toddlers, swinging them up, holding their hands as they picked shells on the beach. My grandfather, tall and vibrant, captured riding home after work on his beloved bicycle. My mother as a young child being coaxed onto a fairground ride and the look of suspicion on her face as she glared at the carousel horse.</p>
 <p>I started researching my family tree, putting names and lives to the photographs I owned. But with this came a sense of regret, that there were so many people appearing on that tree where there were no photographs. Examining the census data from the 19th century, I was intrigued by their lives – here, in 1831 was my great-great-great grandfather living with his wife, five children and the housekeeper. In 1841, the information showed that the wife had died and the housekeeper now shared his surname!</p>
@@ -268,14 +262,13 @@ Very minimal, we’re happy to remove things like spots and runny noses.  If you
       <MetaTitle>contact | </MetaTitle>
     </Meta>
     <Images>
-      <Image Name="header">mulberry_photos_header.jpg</Image>
-      <Image Name="banner">cropped-family_portrait2.jpg</Image>
+      <Image Name="banner" Type="Carousel" Order="1">cropped-family_portrait2.jpg</Image>      
     </Images>
     <Sections>
       <Section Name="Main" Title="CONTACT">
         <element>
           <![CDATA[
-          <div style="word-wrap:normal;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;">If you’d like to book your family portrait session, or have any questions….. we’d love to hear from you</div>
+          <div>If you’d like to book your family portrait session, or have any questions….. we’d love to hear from you</div>
           ]]>
         </element>
       </Section>
