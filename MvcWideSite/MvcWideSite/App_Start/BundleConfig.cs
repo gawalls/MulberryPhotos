@@ -32,6 +32,7 @@ namespace MvcWideSite
             bootstrapBundle.Transforms.Add(new JsMinify());
             cssBundle.Transforms.Add(new CssMinify());
             
+            
             bundles.Add(scriptsBundle);
             bundles.Add(modernizerBundle);
             bundles.Add(bootstrapBundle);
