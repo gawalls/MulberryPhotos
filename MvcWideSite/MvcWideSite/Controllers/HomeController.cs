@@ -49,14 +49,15 @@ namespace MvcWideSite.Controllers
             
             if (ModelState.IsValid)
             {
-                MailMessage message = new MailMessage($"{model.Email}", model.ToEmailAddress);
+                MailMessage message = new MailMessage();
+                message.To.Add(model.ToEmailAddress);
                 message.Subject = "Mulberry photos enquiry";
                 message.Body = model.HtmlMessageBody;
                 message.IsBodyHtml = true;
 
                 using (SmtpClient smtp = new SmtpClient())
                 {
-                    smtp.Send(message);
+                    smtp.Send(message);                    
                     model.EmailSent = true;
                 }
             }

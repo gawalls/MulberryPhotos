@@ -77,3 +77,4 @@ MvcWideSite/.vs/
 MvcSite1/.vs/MvcSite1/v15/Server/
 /MvcWideSite/MvcWideSite/Web.Release.config
 /MvcWideSite/MvcWideSite/smtp.config
+/MvcWideSite/MvcWideSite/siteSettings.config
