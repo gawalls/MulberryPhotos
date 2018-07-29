@@ -162,7 +162,9 @@
     <Compile Include="ViewModels\WebPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\WebsiteContent.xml" />
+    <Content Include="App_Data\WebsiteContent.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BannerImage2.jpg" />
