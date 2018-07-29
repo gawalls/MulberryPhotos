@@ -11,16 +11,16 @@ namespace TestHarness.MulberryPhotos.DataAcess
     {
         private static string homePcFolderLocation = @"D:\GithubRepositories\";
         private static string workPcLocation = @"D:\ConceptProjects";
-        private static string filenameOnly = @"MulberryPhotos\Content\WebsiteContent.xml";
+        private static string filenameOnly = @"App_Data\websiteContent.xml";
         
         public static string WorkXmlFileLocation
         {
-            get { return Path.Combine(workPcLocation, filenameOnly); }
+            get { return Path.Combine(System.IO.Directory.GetCurrentDirectory(),  filenameOnly); }
         }
 
         public static string HomeXmlFileLocation
         {
-            get { return Path.Combine(homePcFolderLocation, filenameOnly); }
+            get { return Path.Combine(System.IO.Directory.GetCurrentDirectory(), filenameOnly); }
         }
     }
 }
