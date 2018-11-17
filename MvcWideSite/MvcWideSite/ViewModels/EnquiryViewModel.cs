@@ -23,6 +23,8 @@ namespace MvcWideSite.ViewModels
 
         public bool EmailSent { get; set; }
 
+        public bool IsHuman { get; set; } = true;
+
         public string ToEmailAddress
         {
             get

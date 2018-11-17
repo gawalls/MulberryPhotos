@@ -26,7 +26,7 @@
         <h2>Your enquiry has been sent.</h2>
     }
     else
-    {
+    { 
         <div class="userForm form-horizontal">
             <div class="form-group">
                 <label for="Name" class="col-xs-3 col-sm-2 control-label">Name</label>
@@ -62,9 +62,20 @@
 
             <div class="">
                 <div class="pull-right">
-                    <button type="submit" class="btn btn-primary padding-right-15px"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
+                    <button type="submit" class="form-control btn btn-primary padding-right-15px"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Submit</button>
                 </div>
             </div>
+            <div class="pull-right">
+                <div class="g-recaptcha" data-sitekey="6LdBbHsUAAAAAOUgtI9nzIzHgutqohB6KBq0pmcc"></div>
+            </div>
+            @if (Model.IsHuman == false)
+            {
+                <div class="">
+                    <div class="pull-right">
+                        <div class="alert alert-danger">There was a problem, unable to send your enquiry.</div>
+                    </div>
+                </div>
+            }
         </div>
     }
 }
